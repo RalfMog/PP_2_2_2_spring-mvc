@@ -9,8 +9,12 @@ import java.util.List;
 
 @Service
 public class CarsServiceImpl implements CarsService {
+    public final CarsDao carsDao;
+
     @Autowired
-    public CarsDao carsDao;
+    public CarsServiceImpl(CarsDao carsDao) {
+        this.carsDao = carsDao;
+    }
 
     @Override
     public List<Car> carsCount(int number) {

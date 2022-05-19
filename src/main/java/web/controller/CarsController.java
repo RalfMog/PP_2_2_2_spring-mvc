@@ -11,8 +11,12 @@ import web.service.CarsService;
 @Controller
 public class CarsController {
 
+    public final CarsService carsService;
+
     @Autowired
-    public CarsService carsService;
+    public CarsController(CarsService carsService) {
+        this.carsService = carsService;
+    }
 
 
     @GetMapping(value ="/cars")
