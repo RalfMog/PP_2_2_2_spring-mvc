@@ -1,9 +1,10 @@
-package web.service;
+package web.dao;
 
 import web.model.Car;
 
 import java.util.List;
 
-public interface CarsService {
+public interface CarsDao {
+
     public List<Car> carsCount(int number);
 }
