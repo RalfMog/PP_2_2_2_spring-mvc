@@ -11,7 +11,7 @@ import web.service.CarsService;
 @Controller
 public class CarsController {
 
-    public final CarsService carsService;
+    private final CarsService carsService;
 
     @Autowired
     public CarsController(CarsService carsService) {
